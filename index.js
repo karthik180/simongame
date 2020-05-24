@@ -12,15 +12,6 @@ $(document).keypress(function(){
       }
  });
 
- $("h1").click(function(){
-  if (!started) {
-      $("h1").text("Level " + i);
-      startGame();
-      started = true;
-    }
-});
-
-
 $("button").on("click",function(){
     arrPlayer.push("."+ event.srcElement.className);
     playSound(event.srcElement.className);
