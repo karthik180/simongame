@@ -41,7 +41,7 @@ function startGame(){
         i++;
         $("h1").text("Level " + i);
         
-        var n = Math.floor(Math.random()*3)+1;
+        var n = Math.floor(Math.random()*4);
         $("."+buttons[n]).fadeIn(100).fadeOut(100).fadeIn(100);
         arrGame.push("."+buttons[n]);
         playSound(buttons[n]);
